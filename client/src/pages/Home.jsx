@@ -1,7 +1,12 @@
+import Hero from "../Components/Hero";
+import Product from "../Components/Product";
+
 function Home() {
   return (
     <div>
-      <h1>Welcome to Home Page</h1>
+      
+      <Hero/>
+      <Product/>
     </div>
   );
 }
