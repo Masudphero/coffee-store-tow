@@ -6,6 +6,7 @@ import UpdateCoffee from "../Components/UpdateCoffee";
 import View from "../Components/View";
 import Signin from "../Components/Signin"; // ✅ Import
 import Register from "../Components/Register";
+import Dashboard from "../layout/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,17 @@ const router = createBrowserRouter([
       { path: "coffee/:id", element: <View /> },
     ],
   },
+
+  {
+    path: "/admin",
+    element: <Dashboard/>,
+   
+  },
+
+
+
+
+
 ]);
 
 export default router;

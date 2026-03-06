@@ -29,11 +29,15 @@ export const AuthProvider = ({ children }) => {
     if (name) {
       await updateProfile(userCredential.user, { displayName: name });
     }
-    console.log("Signup User:", {
+ const user   =    {
       name: userCredential.user.displayName,
       email: userCredential.user.email,
       uid: userCredential.user.uid,
-    });
+      rol:"user"
+    }
+console.log(user)
+
+    
     return userCredential.user;
   };
 
